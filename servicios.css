@@ -1,0 +1,245 @@
+
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Header */
+  nav {
+    background-color: #eaae00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+  }
+  
+  .logo-company {
+    height: 50px;
+    width: 210px;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    color: #fefaf5;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 25px;
+  }
+  
+  .menu-item:hover {
+    font-size: 29px;
+    transition: 0.5s;
+  }
+  
+  input.input-menu {
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: #ffc400;
+    border: none;
+    color: #ffffff;
+    font-size: 19px;
+    box-shadow: 30px 30px 190px -1px #000000;
+  }
+  
+  input.input-menu::placeholder {
+    color: #fff;
+    font-size: 19px;
+  }
+  
+  input.input-menu:focus {
+    outline: none; /* quita el borde  cuandp hay  un focus */
+  }
+  
+  .button-menu {
+    background-color: #00bfcc;
+    height: 45px;
+    width: 50px;
+    border: none;
+    box-shadow: 10px -20px 180px -10px #000;
+    margin-right: 10px;
+  }
+  
+  .lupa-button {
+    height: 25px;
+    width: 25px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  
+  /* Servicios */
+  .servicios-section {
+    margin-top: 120px; /* Ya lo tienes, esto está bien */
+    padding: 40px 20px;
+    background-color: #fff6e0;
+    text-align: center;
+  }
+   
+  .servicios-section h2 {
+    color: #eaae00;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+  
+  .servicios-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .servicio-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .servicio-card img {
+    width: 70%;
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .servicio-card h3 {
+    color: #ff00aa;
+    margin-top: 15px;
+    font-size: 1.5em;
+  }
+  
+  .servicio-card p {
+    color: #555;
+    font-size: 1em;
+    margin-top: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #313131;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+    justify-content: space-around;
+  }
+  
+  footer h2.titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .about > p:hover,
+  .services > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  footer p {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .contact h2 {
+    text-align: center;
+  }
+  
+  .contact p {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .contenedor-buscar {
+    display: flex;
+    height: 52px;
+  }
+  
+  .contenedor-button {
+    background-color: #01bfcb;
+    cursor: pointer;
+  }
+  
+  img.enviar-button {
+    margin: 10px 10px;
+  }
+  
+  .input-footer {
+    height: 50px;
+    width: 300px;
+    margin-bottom: 100px;
+    border: none;
+    background-color: #eaae00;
+    color: #fff;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .input-footer:focus {
+    outline: none;
+  }
+  
+  .footer-redes-sociales {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    justify-content: space-around;
+   
+  }
+  
+  .footer-redes-sociales img {
+    height: 40px;
+    width: 40px;
+   
+  }
+  
+  .footer-redes-sociales img:hover {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .servicios-contenedor {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    nav {
+      height: 60px;
+    }
+  }
+
+  nav {
+    background-color: #eaae00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* <-- Asegura que esté por encima de otros elementos */
+  }
